@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-image: linear-gradient(90deg,rgb(14, 12, 13),rgb(39, 17, 36), rgb(88, 1, 81), rgb(116, 2, 106));
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+#tasks-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tasks-header{
+    margin-top: 40px;
+}
+#add-task-form{
+    position: relative;
+}
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+#add-task-form input:focus{
+    outline: none;
+}
+#add-btn{
+    position: absolute;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-left: 0px;
+    width: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#add-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Tasks criadas*/
+#tasks-list-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tasks-list{
+    list-style: none;
+    padding-left: 0;
+}
+#tasks-list li{
+    background-color: white;
+    border-bottom: 3px solid black;
+    color: black;
+    text-align: left; 
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.btn{
+    position: absolute;
+    top: 6px;
+    height: 35px;
+    width: 30px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#done-btn{
+    right: 45px;
+}
+#done-btn:hover{
+    background-color: black;
+    color: white;
+}
+#remove-btn{
+    right: 10px;
+}
+#remove-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.hide{
+    display: none;
+}
+
+#tasks-list li.done{
+    text-decoration: line-through;
+}

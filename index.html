@@ -9,6 +9,26 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    
+    <div id="tasks-container">
+        <div id="tasks-header">
+            <h2>Crie Sua lista de Tarefas</h2>
+            <form action="" id="add-task-form">
+                <input id="task-title" type="text" placeholder="Sua Próxima Tarefa">
+                <button id="add-btn" type="submit">+</button>
+            </form>
+        </div>
+    </div>
+    <div id="tasks-list-container">
+        <h2>Estas são as suas Tarefas:</h2>
+        <ul id="tasks-list">
+            <li class="task-box">
+                <span class="task-title">teste</span>
+                <button id="done-btn" class="btn" name="checkmark-ouotline">+</button>
+                <button id="remove-btn"class="btn" name="close-outline">-</button>
+
+            </li>
+        </ul>
+
+    </div>
 </body>
 </html>
