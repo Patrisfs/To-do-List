@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Helvetica;
-    background-image: linear-gradient(90deg,rgb(14, 12, 13),rgb(39, 17, 36), rgb(88, 1, 81), rgb(116, 2, 106));
+    background-image: linear-gradient(135deg,rgb(14, 12, 13),rgb(39, 17, 36), rgb(88, 1, 81), rgb(116, 2, 106));
     color: white;
     text-align: center;
     padding-top: 30px;
@@ -96,4 +96,8 @@ body{
 #tasks-list li.done{
     text-decoration: line-through;
     background-color: grey;
+}
+#tasks-list li.done > .btn{
+    background-color: black;
+    color: white;
 }
